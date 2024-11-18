@@ -10,4 +10,17 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'counter';
+  counter: number = 0;
+
+  ctrReset(): void {
+    this.counter = 0;
+  }
+
+  ctrInc(): void {
+    this.counter +=1;
+  }
+
+  ctrDec(): void {
+    this.counter -=1;
+  }
 }

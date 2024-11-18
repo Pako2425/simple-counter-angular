@@ -7,9 +7,21 @@
   </head>
   <body>
     <div class="container">
-      <h1 class="text-center">Hello, Bootstrap in Angular!</h1>
-      <button class="btn btn-primary">Click me</button>
-      <button>Click me</button>
+      <div class="name">
+        <h1 class="text">Counter</h1>
+      </div>
+      <div class="display">
+        <div class="value-display">
+          <div class="value">
+            <h3>{{counter}}</h3>
+          </div>
+        </div>
+      </div>
+      <div class="keyboard">
+        <button class="btn btn-primary" (click)="ctrDec()">-1</button>
+        <button class="btn btn-primary" (click)="ctrReset()">Reset</button>
+        <button class="btn btn-primary" (click)="ctrInc()">+1</button>
+      </div>
     </div>
   </body>
 </html>
